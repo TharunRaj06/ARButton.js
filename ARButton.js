@@ -80,7 +80,7 @@ class ARButton {
 			button.style.left = 'calc(50% - 50px)';
 			button.style.width = '100px';
 
-			button.textContent = 'START AR';
+			button.textContent = 'Enter AR';
 
 			button.onmouseenter = function () {
 
@@ -129,7 +129,7 @@ class ARButton {
 
 			disableButton();
 
-			button.textContent = 'AR NOT SUPPORTED';
+			window.alert('AR not supported');
 
 		}
 
@@ -139,7 +139,7 @@ class ARButton {
 
 			console.warn( 'Exception when trying to call xr.isSessionSupported', exception );
 
-			button.textContent = 'AR NOT ALLOWED';
+			window.alert('AR not allowed');
 
 		}
 
